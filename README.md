@@ -29,27 +29,43 @@ Perform appropriate rounding to maintain as much accuracy as possible down to th
 second as the smallest granularity. You should not keep fraction of seconds.
 
 Here are some examples:
+
 TimeSpan(1.5, 4, -10) represents 1 hour, 33 minutes, 50 seconds.
+
 TimeSpan(7, -3) represents 6 minutes, 57 seconds.
+
 TimeSpan(-190) represents -3 minutes, -10 seconds.
+
 TimeSpan(3, -90, 120) represents 1 hour, 32 minutes.
+
 
 Operators
 The class overload and implement the following math operators: addition,
 subtraction, and Unary Negation.
+
 The class must overload and implement the following comparison operators: ==, !=, <,
 <=, >, >=
+
 The class must implement += and -= assignment statements as well.
 
 Stream I/O
+
 The class will also implement the input / output operators: >> and << :
+
 Input: >>
+
 Take as input three values: hour, minutes, seconds and create appropriate class. Assume
 that these will be integers.
+
 Output: <<
+
 Output the values in the following format: Hours: value, Minutes: value, Seconds: value
 As an example, this code:
+
 TimeSpan duration1(1, 2, 3);
+
 std::cout << duration1;
+
 Will output:
+
 Hours: 1, Minutes: 2, Seconds: 3
